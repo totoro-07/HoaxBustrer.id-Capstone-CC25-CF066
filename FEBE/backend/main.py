@@ -19,7 +19,6 @@ def predict(input: TextInput):
 
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI()
 
 # Tambahkan middleware agar frontend bisa akses backend
 app.add_middleware(
