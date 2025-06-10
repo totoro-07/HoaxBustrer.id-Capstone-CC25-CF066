@@ -1,0 +1,2 @@
+APP_URL=https://vermillion-puppy-6907f9.netlify.app/#/guest
+MAP_SERVICE_API_KEY=<api_key>
