@@ -1,6 +1,5 @@
 import HomePresenter from '../../../presenters/home/home-presenter';
 import { createSkeletonStory, initMapWithLayerControl } from '../../../utils';
-import '../user/story-list';
 import AnimationHelper from '../../../utils/animation-helper';
 import ErrorHandler from '../../../utils/error-handler';
 

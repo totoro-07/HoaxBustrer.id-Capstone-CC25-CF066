@@ -19,9 +19,9 @@ export default defineConfig({
         registerType: 'autoUpdate',
         includeAssets: ['favicon.png', 'images/*.png'],
         manifest: {
-          name: 'Ceritaverse',
-          short_name: 'Ceritaverse',
-          description: 'Menceritakan ke dunia',
+          name: 'Hoaxbuster',
+          short_name: 'Hoaxbuster',
+          description: 'Lawan Hoax',
           theme_color: '#4a90e2',
           icons: [
             {

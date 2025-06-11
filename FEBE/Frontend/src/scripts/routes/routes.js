@@ -1,6 +1,5 @@
 import HomePage from '../views/pages/home/home-page';
 import GuestPage from '../views/pages/guest/guest-page'; 
-import StoryDetailPage from '../views/pages/user/story-detail-page';
 import CekHoaxPage from '../views/pages/user/cek-hoax-page';
 import LoginPage from '../views/pages/auth/login-page';
 import RegisterPage from '../views/pages/auth/register-page';
@@ -13,7 +12,6 @@ const routes = {
   '/': new HomePage(),
   '/home': new HomePage(),
   '/guest': new GuestPage(), 
-  '/stories/:id': new StoryDetailPage(),
   '/cek-hoax': new CekHoaxPage(),
   '/login': new LoginPage(),
   '/register': new RegisterPage(),

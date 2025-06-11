@@ -26,7 +26,7 @@ export default class GuestPage {
             <div class="feature-card">
               <i class="fas fa-brain icon"></i>
               <h3>AI Canggih</h3>
-              <p>Model ML terbaru dengan akurasi tinggi hingga 92%.</p>
+              <p>Model ML terbaru dengan akurasi tinggi hingga 90%.</p>
             </div>
             <div class="feature-card">
               <i class="fas fa-bolt icon"></i>
@@ -36,7 +36,7 @@ export default class GuestPage {
             <div class="feature-card">
               <i class="fas fa-database icon"></i>
               <h3>Database Luas</h3>
-              <p>50.000+ sumber terpercaya sebagai referensi validasi.</p>
+              <p>24.000+ sumber terpercaya sebagai referensi validasi.</p>
             </div>
           </div>
         </div>

@@ -35,6 +35,9 @@ export default class AddStoryPage {
               </button>
             </div>
           </form>
+
+          <!-- Hasil prediksi akan ditampilkan di sini -->
+          <div id="prediction-result" class="prediction-result mt-4" style="display: none;"></div>
         </section>
       </div>
     `;
@@ -66,6 +69,7 @@ export default class AddStoryPage {
         await this.presenter.handleSubmitHoaxCheck({ description });
       } catch (error) {
         showAlert('Terjadi kesalahan saat memeriksa hoax.', 'danger');
+      } finally {
         submitButton.disabled = false;
         submitButton.innerHTML = originalContent;
       }
@@ -89,4 +93,27 @@ export default class AddStoryPage {
       transform: 'translateY(0)'
     });
   }
+
+showPrediction(prediction) {
+  const resultContainer = document.getElementById('prediction-result');
+  resultContainer.style.display = 'block';
+
+  // Ambil label dari objek prediction
+  const label = prediction.label.toLowerCase();
+  const confidence = prediction.confidence;
+  const isHoax = label === 'hoax';
+
+  resultContainer.innerHTML = `
+    <div class="bg-white shadow rounded-lg p-4 border ${isHoax ? 'border-red-600' : 'border-green-600'}">
+      <h2 class="${isHoax ? 'text-red-700' : 'text-green-700'} text-lg font-bold mb-2">🧠 Hasil Prediksi</h2>
+      <p class="text-gray-800 text-md">
+        Teks tersebut terdeteksi sebagai: 
+        <strong class="${isHoax ? 'text-red-600' : 'text-green-600'}">
+          ${prediction.label} (${confidence}% yakin)
+        </strong>
+      </p>
+    </div>
+  `;
+}
+
 }
