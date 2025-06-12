@@ -1,0 +1,17 @@
+[phases.setup]
+nixPkgs = ['nodejs', 'python39']
+
+[phases.install]
+cmds = [
+    'cd FEBE/Frontend && npm install',
+    'cd FEBE/backend && pip install -r requirements.txt'
+]
+
+[phases.build]
+cmds = [
+    'cd FEBE/Frontend && npm run build',
+    'cp -r FEBE/Frontend/dist FEBE/backend/'
+]
+
+[start]
+cmd = 'cd FEBE/backend && uvicorn main:app --host 0.0.0.0 --port $PORT'
