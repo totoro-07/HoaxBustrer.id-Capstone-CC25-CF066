@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-scikit-learn
-pydantic
-python-jose
-passlib[bcrypt]
-h5py
-tensorflow
