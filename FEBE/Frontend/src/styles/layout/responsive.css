@@ -1,0 +1,231 @@
+@media (max-width: 768px) {
+  .navigasi-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 320px;
+    height: 100vh;
+    background-color: #f9f9f9;
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .navigasi-links li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .navigasi-links .tautan-nav {
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1rem 1.2rem;
+  }
+
+  .navigasi-links .tautan-nav.info-user,
+  .navigasi-links .tombol-notifikasi {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navigasi-links.muncul {
+    right: 0;
+  }
+
+  .tombol-drawer {
+    display: block;
+  }
+
+  .judul-utama {
+    font-size: 2.1rem;
+  }
+
+  .deskripsi-utama {
+    font-size: 1.05rem;
+  }
+
+  .aksi-item-cerita {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .tombol-item-cerita {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .merek span {
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .wadah-nav {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-autentikasi {
+    padding: 2rem 1rem;
+    margin-top: 7rem;
+    max-width: 100%;
+  }
+
+  .form-autentikasi__judul {
+    font-size: 1.7rem;
+  }
+
+  .kontrol-form {
+    padding: 0.9rem;
+  }
+
+  .tombol-submit {
+    padding: 0.9rem;
+  }
+
+  .halaman-tambah-cerita {
+    padding: 5.5rem 1rem 2rem;
+  }
+
+  .navigasi {
+    height: 58px;
+  }
+
+  .wadah-nav {
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .daftar-cerita {
+    grid-template-columns: 1fr;
+  }
+
+  .bagian-utama {
+    padding: 5rem 1rem 2.5rem;
+  }
+
+  .halaman-cerita,
+  .detail-cerita,
+  .halaman-tambah-cerita {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .peta-lokasi {
+    padding: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .judul-peta {
+    font-size: 1.45rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+
+  .peta-lokasi,
+  #peta-cerita,
+  #peta {
+    height: 240px;
+  }
+
+  #peta {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .popup-cerita {
+    max-width: 190px;
+  }
+
+  .popup-cerita h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+  }
+
+  .popup-cerita img {
+    display: block;
+    border-radius: 5px;
+  }
+
+  .popup-cerita .tanggal-cerita {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 0.2rem 0;
+  }
+
+  .popup-cerita .tautan-cerita {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+
+  .popup-cerita .tautan-cerita:hover {
+    background: #2563eb;
+  }
+
+  .logo-merek {
+    height: 28px;
+    min-width: 28px;
+  }
+
+  .merek {
+    font-size: 1rem;
+  }
+
+  .navigasi {
+    height: 52px;
+  }
+
+  .navigasi-links {
+    width: 90%;
+    padding: 1.2rem;
+  }
+
+  .tautan-nav {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .overlay-menu-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+  }
+
+  .overlay-menu-nav.aktif {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .merek span {
+    max-width: 85px;
+  }
+
+  .logo-merek {
+    height: 24px;
+    min-width: 24px;
+  }
+
+  .navigasi {
+    height: 48px;
+  }
+}
